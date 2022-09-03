@@ -1,0 +1,1 @@
+# Nuxt course 2022
