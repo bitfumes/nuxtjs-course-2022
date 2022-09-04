@@ -5,5 +5,6 @@
 <script>
 definePageMeta({
   layout: false,
+  title: "About",
 });
 </script>
