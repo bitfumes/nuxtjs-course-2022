@@ -20,7 +20,11 @@
 <script setup>
 const cart = useCart();
 const auth = useAuth();
-const pageVisitCount = usePageVisitCount();
+let pageVisitCount = 0;
+
+onMounted(() => {
+  pageVisitCount = usePageVisitCount();
+});
 
 function logout() {
   auth.value.isAuthenticated = false;
