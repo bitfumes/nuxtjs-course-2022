@@ -20,10 +20,10 @@
 <script setup>
 const cart = useCart();
 const auth = useAuth();
-let pageVisitCount = 0;
+const pageVisitCount = ref(0);
 
 onMounted(() => {
-  pageVisitCount = usePageVisitCount();
+  pageVisitCount.value = usePageVisitCount();
 });
 
 function logout() {
