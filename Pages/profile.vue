@@ -5,5 +5,6 @@
 <script>
 definePageMeta({
   layout: "sidebar",
+  middleware: ["auth"],
 });
 </script>
